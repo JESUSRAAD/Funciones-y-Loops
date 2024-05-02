@@ -140,12 +140,14 @@ for (let i = ""; i.length <= 10; i += "#") {
 //                ##
 console.log(`EJERCICIO 8`);
 
-
+let space="               "
 for (let i = ""; i.length <= 19; i += "##") {
-  console.log(i);
+   space=space.slice(1)
+  console.log(space+i);
 }
 
-for (let i = "####################"; i.length > 0; i =i.slice(2)) {
-  console.log(i);
+for (let i = "################"; i.length >1; i =i.slice(2)) {
+   space=space+space[1]
+  console.log(space+i);
 }
 
